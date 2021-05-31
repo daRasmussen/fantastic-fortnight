@@ -1,0 +1,99 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+#main-logo {
+  font-size: 2em;
+  margin: 20px auto;
+}
+
+body {
+  text-align: center;
+  font-family: Futura, Arial, sans-serif;
+  height: 100%;
+  width: 100%;
+  background-image: (url="https://www.onlinepianocoach.com/images/chopin-manuscript-paper.jpg")
+}
+
+.subheading-home {
+  font-size: 1em;
+}
+
+.paragraph {
+  font-size: 0.8em;
+  margin: 15px auto;
+}
+
+#button-container {
+  background-color: lightblue;
+  width: 75%;
+  padding: 0 15px 15px;
+  margin: 0 auto;
+}
+
+#button-container > a {
+  margin: 15px auto 0 auto;
+  border-radius: 5px;
+  width: 100%;
+  height: 80px;
+  display: inline-block;
+  text-align: center;
+  line-height: 80px;
+  background-color: rgb(233, 147, 50);
+  text-decoration: none;
+}
+
+/* Quiz Page */
+
+.main-logo-small {
+ font-size: 1rem;
+ text-align: left;
+ width: 50%;
+}
+
+#header-quiz {
+  background-color: blueviolet;
+  top: 0;
+  width: 100%;
+  height: 60px;
+}
+
+#navbar-quiz {
+  right: 10px;
+  width: 50%;
+  float: right;
+  position: fixed;
+  top: 0;
+}
+
+#navbar-quiz li {
+  list-style-type: none;
+  display: inline-block;
+  position: relative;
+  padding: 15px;
+}
+
+#staff {
+  background-color: burlywood;
+  display: inline-block;
+  width: 85%;
+  height: 100%;
+  padding: 15px;
+}
+
+#empty-staff {
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+}
+
+#treble-clef {
+  position: absolute;
+  left: 20%;
+  height: 10%;
+  margin-left: -10%;
+  mix-blend-mode: multiply;
+}
