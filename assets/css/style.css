@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   border: none;
+  box-sizing: border-box;
 }
 
 #main-logo {
@@ -15,11 +16,20 @@ body {
   font-family: Futura, Arial, sans-serif;
   height: 100%;
   width: 100%;
-  background-image: (url="https://www.onlinepianocoach.com/images/chopin-manuscript-paper.jpg")
+  color:rgb(233, 147, 50);
+  
+  background:
+      #2a2a2a
+      url(../images/wallpaper_notes.jpeg)
+      center center / cover
+      no-repeat
+      fixed;
+  background-blend-mode: color-burn;
 }
 
 .subheading-home {
   font-size: 1em;
+  margin-top: 10%;
 }
 
 .paragraph {
@@ -28,21 +38,39 @@ body {
 }
 
 #button-container {
-  background-color: lightblue;
+  background-color: rgba(233, 147, 50, 0.3);
   width: 75%;
+  max-width: 500px;
+  border-radius: 4px;
   padding: 0 15px 15px;
-  margin: 0 auto;
+  margin: 10% auto 0;
+}
+
+a {
+  color: #2a2a2a;
 }
 
 #button-container > a {
   margin: 15px auto 0 auto;
   border-radius: 5px;
   width: 100%;
-  height: 80px;
+  height: 10%;
   display: inline-block;
   text-align: center;
   line-height: 80px;
   background-color: rgb(233, 147, 50);
+  text-decoration: none;
+}
+
+footer {
+  position: absolute;
+  height: 7%;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color:rgb(233, 147, 50);
   text-decoration: none;
 }
 
@@ -51,49 +79,214 @@ body {
 .main-logo-small {
  font-size: 1rem;
  text-align: left;
+ margin: 10px auto 0 10px;
+ position: absolute;
  width: 50%;
 }
 
-#header-quiz {
-  background-color: blueviolet;
-  top: 0;
-  width: 100%;
-  height: 60px;
+.subheading-other {
+  font-size: 1em;
+  margin: 20px auto 20px;
 }
 
-#navbar-quiz {
-  right: 10px;
-  width: 50%;
-  float: right;
-  position: fixed;
-  top: 0;
+#quiz-box {
+  margin: 20px auto;
+  width: 95%;
+  max-width: 500px;
+  text-align: center;
 }
 
-#navbar-quiz li {
-  list-style-type: none;
-  display: inline-block;
-  position: relative;
-  padding: 15px;
-}
-
-#staff {
-  background-color: burlywood;
-  display: inline-block;
-  width: 85%;
-  height: 100%;
-  padding: 15px;
-}
-
-#empty-staff {
-  width: 100%;
-  height: 100px;
-  margin: 0 auto;
-}
-
-#treble-clef {
-  position: absolute;
+#score {
+  float: left;
   left: 20%;
-  height: 10%;
-  margin-left: -10%;
-  mix-blend-mode: multiply;
+}
+
+#clock {
+  float: right;
+  right: 20%;
+}
+
+#score, #clock {
+  margin: 15px auto;
+}
+
+#staffbox {
+  clear: both;
+  position: relative;
+  height: 50%;
+  padding: 15px;
+  width: 95%;
+  max-width: 500px;
+  background-color:rgb(224, 204, 182);
+  text-align: center;
+  border-radius: 4px;
+  margin: 35px auto;
+}
+
+#staffbox > img {
+  width: 100%;
+  height: 100%;
+}
+
+#answer-input {
+  margin: 10% auto 0;
+  border-radius: 4px;
+  background-color:rgb(224, 204, 182);
+  display: block;
+  height: 25px;
+  width: 40%;
+  max-width: 200px;
+}
+
+#submit-button {
+  margin: 3% auto 10%;
+  border-radius: 4px;
+  display: block;
+  width: 40%;
+  background-color: rgba(233, 147, 50, 0.6);
+  height: 25px;
+  max-width: 200px;
+}
+
+/* learn.html */
+
+.learn-text {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  text-align: justify;
+  padding: 15px;
+  color:rgb(224, 204, 182)
+}
+
+.learn-image {
+  width: 85%;
+  margin-top: 20px;
+  border-radius: 3px;
+}
+
+.learn-image-2 {
+  width: 95%;
+  height: 100%;
+  margin: 15px auto;
+  border-radius: 3px;
+  background-color:rgb(224, 204, 182);
+}
+
+/* Hamnburger Menu */
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Styles to header & navbar */
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+/* Hamburger Style */
+
+.hamburger {
+  display: none;
+  margin-top: -7px;
+  background-color: transparent;
+  position: fixed;
+  right: 15px;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(233, 147, 50);
+}
+
+/* Basic styles for other elements */
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.nav-item {
+  margin-left: 5rem;
+}
+
+.nav-link{
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color:rgb(224, 204, 182);
+  text-shadow: 0 0 4px #2a2a2a;
+}
+
+.nav-link:hover{
+  color:rgb(233, 147, 50)
+}
+
+.nav-logo {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color:rgb(233, 147, 50)
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 4rem;
+      flex-direction: column;
+      background-color: #2a2a2ab6;
+      width: 100%;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+  }
+
+  .nav-menu.active {
+      left: 0;
+  }
+
+  .nav-item {
+      margin: 2rem 0;
+  }
+
+  .hamburger {
+      display: block;
+      cursor: pointer;
+  }
+
+/* for animation */
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+
+
 }
