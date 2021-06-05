@@ -4,7 +4,7 @@ const wrongName = 'wrong-';
 
 const cls = {
     btns: {
-        play: 'submit-button'
+        play: '.submit-button'
     }
 }
 
