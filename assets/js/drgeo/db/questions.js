@@ -1,7 +1,10 @@
-[
+import config from '../conf/conf.js';
+const { assets: { prefix }} = config;
+
+const db = [
   {
     "question": "Name this symbol!",
-    "image": "8th-rest.png",
+    "image": `${prefix}8th-rest.png`,
     "wrong-1": "G",
     "wrong-2": "16th Rest",
     "wrong-3": "Bb",
@@ -552,4 +555,8 @@
     "correct": "Whole-note"
   },
 ]
+
+export default {
+  db
+}
 
