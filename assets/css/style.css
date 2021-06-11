@@ -96,6 +96,7 @@ footer a {
 #quiz-box {
   margin: 20px auto;
   width: 95%;
+  height: 100%;
   max-width: 500px;
   text-align: center;
 }
@@ -132,6 +133,13 @@ footer a {
   height: 100%;
 }
 
+#answers-box {
+  display: block;
+  grid-template-columns: 2;
+  grid-template-rows: 2;
+  width: 100%;
+}
+
 #answer-input {
   margin: 10% auto 0;
   border-radius: 4px;
@@ -139,6 +147,16 @@ footer a {
   display: block;
   height: 25px;
   width: 40%;
+  max-width: 200px;
+}
+
+.quiz-button {
+  margin: 5% 2% 10%;
+  border-radius: 4px;
+  display: inline-block;
+  width: 35%;
+  background-color: rgba(233, 147, 50, 0.6);
+  height: 25px;
   max-width: 200px;
 }
 
@@ -302,17 +320,21 @@ a {
   text-align: center;
 }
 
-#form-div .input {
+#form-div .input, textarea {
   position: relative;
-  margin: 8% auto;
+  margin: 5% auto 10%;
   display: inline-block;
   width: 100%;
+  border-radius: 4px;
+}
+
+#form-div .input {
   height: 25px;
 }
 
 textarea {
-  margin: 0 auto;
   width: 100%;
+  margin: 5% auto;
 }
 
 #checkbox {
@@ -320,7 +342,7 @@ textarea {
   margin-left: 2%;
 }
 
-.submit-button {
+#submit {
   margin: 10% auto 10%;
   border-radius: 4px;
   display: block;
@@ -328,6 +350,10 @@ textarea {
   background-color: rgba(233, 147, 50, 0.6);
   height: 25px;
   max-width: 200px;
+}
+
+#sent-msg {
+  padding: 10px;
 }
 
 /* Media Query */
